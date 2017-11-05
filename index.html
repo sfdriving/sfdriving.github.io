@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="jquery.min.js"></script>
+    <script src="code.js"></script>
+    <title>Driving School</title>
+</head>
+
+<body>
+    <header>
+        <div display="inline-block">
+            <img src="icon.JPG">
+            <ul style="float:right">
+                <li><a href="">English</a></li>
+                <li><a href="">Chinese</a></li>
+            </ul>
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Test Tips</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </header>
+    <main style="clear:both">
+        <div style="float:right;max-width:400px;width:50%" id="enterDetails">
+            <h2>Booking</h2>
+            <div>
+                <p>Name:</p> <textarea id="ta_name"></textarea>
+            </div>
+            <div>
+                <p>Telephone:</p> <textarea id="ta_telephone"></textarea>
+            </div>
+            <div>
+                <p>Address:</p> <textarea id="ta_address"></textarea>
+            </div>
+            <div>
+                <p>Email:</p> <textarea id="ta_email"></textarea>
+            </div>
+            <div>
+                <p>Message:</p> <textarea rows="5" id="ta_message"></textarea>
+            </div>
+            <input type="submit" onclick="onSubmit()">
+        </div>
+        <div style="float:left">
+            <p>Experienced instructor</p>
+        </div>
+
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>

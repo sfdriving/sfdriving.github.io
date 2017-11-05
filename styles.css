@@ -1,0 +1,31 @@
+li {
+    float: left;
+    padding: 20px;
+    background: blue;
+}
+
+ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+li>a{
+    color: white;
+}
+
+li:hover{
+    background:green;
+}
+
+html{
+    background: antiquewhite;
+}
+
+#enterDetails div p{
+    display: inline-block;
+    vertical-align: middle;
+}
+#enterDetails div textarea{
+    vertical-align: middle;
+}
