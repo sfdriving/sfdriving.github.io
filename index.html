@@ -7,58 +7,64 @@
     <link rel="stylesheet" href="/styles.css">
     <script src="jquery.min.js"></script>
     <script src="code.js"></script>
-
-    <script>
-        $(function () {
-            test();
-    </script>
     <title>Driving School</title>
 </head>
 
 <body>
     <header>
         <div display="inline-block">
-            <img src="icon.JPG" style="padding: 15px">
-            <ul style="float:right">
+            <!-- <img src="icon.JPG" style="padding: 15px"> -->
+            <h1>Straightforward Driving<br>0426 122 848</h1>
+            <p id="subtitle">Drive straightforward. Learn straightforward.</p>
+            <ul style="float:right" id="language">
                 <li><a href="">English</a></li>
                 <li><a href="">Chinese</a></li>
             </ul>
         </div>
 
-        <ul style="width:100%">
+        <ul style="width:100%" id="navbar">
             <li><a href="">Home</a></li>
             <li><a href="">Test Tips</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Contact Us</a></li>
         </ul>
     </header>
-    <main style="clear:both; padding:15px 100px">
-        <div style="float:right;max-width:400px;width:50%" id="enterDetails">
-            <h2>Booking</h2>
-            <div>
-                <p>Name:</p> <textarea id="ta_name"></textarea>
-            </div>
-            <div>
-                <p>Telephone:</p> <textarea id="ta_telephone"></textarea>
-            </div>
-            <div>
-                <p>Address:</p> <textarea id="ta_address"></textarea>
-            </div>
-            <div>
-                <p>Email:</p> <textarea id="ta_email"></textarea>
-            </div>
-            <div>
-                <p>Message:</p> <textarea rows="5" id="ta_message"></textarea>
-            </div>
-            <input type="submit" onclick="onSubmit()">
+    <main style="padding:15px 100px">
+        <div id="content">
+            <p>We are patient and experienced, offering driving lessons at $50/hr in Hornsby, Chatswood, Castle Hill, Macquarie Park &amp; Silverwater.</p>
+            <p>Pass your driving test with ease, and become a safer driver today.</p>
+            <p>Automatic only. Prius. Please contact Brian for details.</p>
         </div>
-        <div style="float:left">
-            <p>Experienced instructor</p>
+        <div id="booking">
+            <h2>Make a booking now</h2>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><textarea id="ta_name"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Telephone:</td>
+                    <td><textarea id="ta_telephone"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea id="ta_address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><textarea id="ta_email"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea id="ta_message" style="height: 60px"></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" onclick="onSubmit()" id="submit_booking">
         </div>
-
-
     </main>
-    <footer></footer>
+    <footer>
+        <p>Designed by <a href="https://pilex1.github.io/" target="_blank">Alex Tan</a> 2017.</p>
+    </footer>
 </body>
 
 </html>

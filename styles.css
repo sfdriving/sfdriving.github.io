@@ -1,8 +1,16 @@
-html{
+body{
+    margin:0px;
     font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 20px;
     background: #222222;
     color: white;
-    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 ul{
@@ -11,8 +19,19 @@ ul{
     padding: 0px;
     margin:0px;
 }
+ul>li{
+    float: left;
+    padding: 0px 10px;
+}
+ul>li:hover{
+    text-decoration: underline;
+}
 
-header>ul{
+#language{
+    font-size:18px;
+}
+
+#navbar{
     font-size: 25px;
     padding: 0px 30px;
     background: #49474D;
@@ -20,32 +39,91 @@ header>ul{
     border-top-style: groove;
 }
 
-li {
-    float: left;
+#navbar>li {
     padding: 20px 40px;
 }
-li:hover{
+#navbar>li:hover{
     background: #525057;
-    text-decoration: underline;
-}
-li>a{
-    color: white;
-    text-decoration: none;
-    
 }
 
-
-body{
-    margin:0px;
+#content{
+    vertical-align: top;
+    display:inline-block;
+    width:60%;
+    padding: 0px 70px 0px 0px;
 }
 
-html{
+#booking{
+    display:inline-block;
+    width:auto;
 }
-
-#enterDetails div p{
+#booking div p{
     display: inline-block;
     vertical-align: middle;
 }
-#enterDetails div textarea{
+#booking div textarea{
     vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 20px;
+}
+
+#submit_booking{
+    margin: 20px 0px;
+    width:100%;
+}
+
+#booking td{
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+#booking textarea{
+    resize:none;
+    width: 200px;
+    height: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#booking input{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+footer{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    height: 40px;
+    position: absolute;
+    border-top: #6C6C6C;
+    border-top-style: solid;
+}
+
+h1{
+    font-size: 36px;
+    color: #B15B5B;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#subtitle{
+    font-size: 20px;
+    font-style:italic;
+    text-align:center;
+    margin: 0px;
 }
