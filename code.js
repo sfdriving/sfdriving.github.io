@@ -1,3 +1,7 @@
+function test() {
+    
+}
+
 function onSubmit() {
     var email = "sfdriving@126.com";
     var message = "";

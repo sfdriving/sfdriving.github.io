@@ -1,25 +1,45 @@
-li {
-    float: left;
-    padding: 20px;
-    background: blue;
+html{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background: #222222;
+    color: white;
+    
 }
 
 ul{
     display: inline-block;
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
+    margin:0px;
 }
 
+header>ul{
+    font-size: 25px;
+    padding: 0px 30px;
+    background: #49474D;
+    border-bottom-style: groove;
+    border-top-style: groove;
+}
+
+li {
+    float: left;
+    padding: 20px 40px;
+}
+li:hover{
+    background: #525057;
+    text-decoration: underline;
+}
 li>a{
     color: white;
+    text-decoration: none;
+    
 }
 
-li:hover{
-    background:green;
+
+body{
+    margin:0px;
 }
 
 html{
-    background: antiquewhite;
 }
 
 #enterDetails div p{
