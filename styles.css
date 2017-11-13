@@ -60,6 +60,9 @@ a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    text-decoration: underline;
+}
 
 #language{
     font-size:18px;
