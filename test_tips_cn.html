@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="jquery.min.js"></script>
+    <script src="code.js"></script>
+    <title>Driving School</title>
+
+    <!-- Loading header and footer -->
+    <script src="/helper.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("header").load("/header_cn.html", ()=>{
+                var url = window.location.href;
+                if (url.endsWith("_cn.html")) {
+                    url = url.substring(0, url.length - 8);
+                } else {
+                    url = url.substring(0, url.length - 5);
+                }
+
+                $("#english").attr("href", url + ".html");
+                $("#chinese").attr("href", url + "_cn.html");
+            });
+            $("footer").load("/footer.html");
+        });
+    </script>
+    <!-- End loading header and footer -->
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <p>路考你需要知道的一些事情:</p>
+        <ul>
+            <li>遵守限速和其它交通标志。 只要违反一次就通不过。
+            </li>
+            <li>
+                眼睛扫描路况是关键
+            </li>
+            <li>
+                温和加速，温和减速， 与前车保持适当距离（3秒空档）
+            </li>
+            <li>
+                与旁车保持至少1米距离
+            </li>
+            <li>
+                你必须对路上情况有反应。
+            </li>
+            <li>
+                路考总是会有小路， 大路，和多车道大路。
+            </li>
+            <li>
+                总是会有转盘， 无信号灯转向， 有信号灯转向
+            </li>
+            <li>
+                总是会有至少一个学校区。
+            </li>
+            <li>
+                总是会有一个路边停车以及下面两个之一： 三点掉头或者街边倒车停车。
+            </li>
+            <li>
+                紧张没有关系但是不要慌乱。 如果不自信就不要去考试。
+            </li>
+            <li>
+                记住考官也是人， 他们讲道理的。
+            </li>
+            <li>
+                做一个普通驾驶员， 不比别人快， 也不必别人慢。 能预测其他驾驶员的行为，并且自己的行为也能被别人预测。 记住你不是在比赛，所以做一个普通驾驶员。
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="jquery.min.js"></script>
+    <script src="code.js"></script>
+    <title>Driving School</title>
+
+    <!-- Loading header and footer -->
+    <script src="/helper.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("header").load("/header.html", () => {
+                var url = window.location.href;
+                if (url.endsWith("_cn.html")) {
+                    url = url.substring(0, url.length - 8);
+                } else {
+                    url = url.substring(0, url.length - 5);
+                }
+
+                $("#english").attr("href", url + ".html");
+                $("#chinese").attr("href", url + "_cn.html");
+            });
+            $("footer").load("/footer.html");
+        });
+    </script>
+    <!-- End loading header and footer -->
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <p>A few things you need to know about road tests:</p>
+        <ul>
+            <li>Obey all speed limits and traffic signs. If you fail one, you fail the test
+            </li>
+            <li>
+                Scanning (particularly around blind spots) is critical.
+            </li>
+            <li>
+                Maintain eco driving (accelerate smoothly, brake smoothly). Keep at least a 3 second gap from vehicles in front
+            </li>
+            <li>
+                Keep at least 1 metre away from the side
+            </li>
+            <li>
+                You are expected to demonstrate responses to hazards.
+            </li>
+            <li>
+                There are always quiet streets, main roads and multi laned roads in the test.
+            </li>
+            <li>
+                There are always roundabouts, turning with traffic lights and turning without traffic lights.
+            </li>
+            <li>
+                There is always at least one school zone.
+            </li>
+            <li>
+                There is always one street parking and either a three point turning OR reverse parking
+            </li>
+            <li>
+                Being nervous is okay, but do not panic. If you are not confident, do not book the test.
+            </li>
+            <li>
+                Testing officers are humans too. They are reasonable.
+            </li>
+            <li>
+                Be an average driver. Do not drive faster or slower than others. Be able to predict the behaviours of other drivers and be
+                predictable yourself. Remember you are not racing, so BE AVERAGE.
+            </li>
+        </ul>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
