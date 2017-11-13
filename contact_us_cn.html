@@ -6,24 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <script src="jquery.min.js"></script>
-    <script src="code.js"></script>
     <title>Driving School</title>
 
     <!-- Loading header and footer -->
     <script src="/helper.js" type="text/javascript"></script>
     <script>
         $(function () {
-            $("header").load("/header_cn.html", () => {
-                var url = window.location.href;
-                if (url.endsWith("_cn.html")) {
-                    url = url.substring(0, url.length - 8);
-                } else {
-                    url = url.substring(0, url.length - 5);
-                }
-
-                $("#english").attr("href", url + ".html");
-                $("#chinese").attr("href", url + "_cn.html");
-            });
+            $("header").load("/header_cn.html", () => onHeaderLoad());
             $("footer").load("/footer.html");
             $("#booking").load("/booking_cn.html");
         });
