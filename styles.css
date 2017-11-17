@@ -120,6 +120,24 @@ input{
     font-size: 20px;
 }
 
+#booking td{
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+#booking textarea{
+    resize:none;
+    width: 200px;
+    height: 15px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 5px;
+    border-radius: 0px;
+}
+#booking input{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
 #submit_booking{
     margin: 20px 0px;
     width:100%;
@@ -131,24 +149,6 @@ input{
 }
 #submit_booking:hover{
     background-color: #525057;
-}
-
-#booking td{
-    padding: 5px 15px;
-    vertical-align: middle;
-}
-#booking textarea{
-    resize:none;
-    width: 200px;
-    height: 15px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-#booking input{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 h2{
