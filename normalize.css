@@ -343,7 +343,7 @@
    */
   
   textarea {
-    overflow: auto;
+    overflow: hidden;
   }
   
   /**
