@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Plex Website</title>
+
+    <!-- Loading stylesheet and icon -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- End loading stylesheet and icon -->
+
+    <!-- Loading fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+    <!-- End loading fonts -->
+
+    <!-- Loading libraries and other files -->
+    <script src="jquery.min.js"></script>
+    <!-- End loading libraries and other files -->
+
+    <!-- Loading header and footer -->
+    <script src="/helper.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("header").load("/header.html", () => setActive("Heading", "Subtitle."));
+            $("footer").load("/footer.html");
+        });
+    </script>
+    <!-- End loading header and footer -->
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="content">
+            <p>We are patient and experienced, offering driving lessons at $50/hr in Hornsby, Chatswood, Castle Hill, Macquarie
+                Park &amp; Silverwater.</p>
+            <p>Pass your driving test with ease, and become a safer driver today.</p>
+            <p>Automatic only. Prius. Please contact Brian for details.</p>
+        </div>
+        <div id="booking"> </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
